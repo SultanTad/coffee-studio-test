@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./app.js" defer></script>
+    <title>Wellnkey</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__wrapper">
+            <div class="nav__support-location">
+              <div class="nav__location">
+                <img
+                  class="nav__location-icon"
+                  src="./images/icons/Map_Pin.svg"
+                  alt="location-icon"
+                />
+                <a class="nav__location-text" href="#">Местоположение</a>
+              </div>
+              <a class="nav__support" href="#">Поддержка</a>
+            </div>
+            <div class="nav__partners-info">
+              <a class="nav__companies" href="#">Компаниям</a>
+              <a class="nav__partners" href="#">Партнерам</a>
+            </div>
+          </div>
+          <img class="logo" src="./images/icons/logo (1).svg" alt="logo" />
+          <div class="nav__user-actions">
+            <div class="burger">
+              <span></span>
+            </div>
+            <div class="nav__sign-in">
+              <a href="#" class="top-nav__sign-in-text">Вход</a>
+              <img
+                class="nav__sign-in-icon"
+                src="./images/icons/login 1.svg"
+                alt="sign-in-icon"
+              />
+            </div>
+            <div class="nav__controls">
+              <img
+                class="nav__search-icon"
+                src="./images/icons/Search.svg"
+                alt="search-icon"
+              />
+              <img
+                class="nav__favorites-icon"
+                src="./images/icons/Frame 6762.svg"
+                alt="favorites-icon"
+              />
+              <img
+                class="nav__cart-icon"
+                src="./images/icons/shop.svg"
+                alt="cart-icon"
+              />
+            </div>
+          </div>
+        </nav>
+        <hr class="header__line" />
+        <nav class="sub__nav">
+          <ul class="sub__nav-list">
+            <li class="sub__nav-item first-item">
+              <img class="sub__nav-icon" src="./images/icons/list.svg" alt="" />
+              <a class="sub__nav-link" href="#">Каталог</a>
+            </li>
+            <li class="sub__nav-item">
+              <img
+                class="sub__nav-icon"
+                src="./images/icons/health.svg"
+                alt=""
+              />
+              <a class="sub__nav-link" href="#">Здоровье</a>
+            </li>
+            <li class="sub__nav-item">
+              <img
+                class="sub__nav-icon"
+                src="./images/icons/beauty.svg"
+                alt=""
+              />
+              <a class="sub__nav-link" href="#">Красота</a>
+            </li>
+            <li class="sub__nav-item">
+              <img
+                class="sub__nav-icon"
+                src="./images/icons/hygiene.svg"
+                alt=""
+              />
+              <a class="sub__nav-link" href="#">Гигиена</a>
+            </li>
+            <li class="sub__nav-item">
+              <img
+                class="sub__nav-icon"
+                src="./images/icons/for-home.svg"
+                alt=""
+              />
+              <a class="sub__nav-link" href="#">Все для дома</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile__menu">
+          <ul class="mobile__menu-list">
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Каталог</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Здоровье</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Красота</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Гигиена</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Все для дома</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Местоположение</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Поддержка</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Компаниям</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="#">Партнерам</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="bread__crumbs">
+          <img
+            class="bread__crumbs-home-icon"
+            src="./images/icons/home.svg"
+            alt="home-icon"
+          />
+          <img
+            class="bread__crumbs-divider-icon"
+            src="./images/icons/divider.svg"
+            alt="divider-icon"
+          />
+          <a class="bread__crumbs-link" href="#">Категория</a>
+          <img
+            class="bread__crumbs-divider-icon"
+            src="./images/icons/divider.svg"
+            alt="divider-icon"
+          />
+          <a class="bread__crumbs-link" href="#">Здоровье</a>
+          <img
+            class="bread__crumbs-divider-icon"
+            src="./images/icons/divider.svg"
+            alt="divider-icon"
+          />
+          <a class="bread__crumbs-link" href="#"
+            >Dermаlogiсa PreCleanse - гидрофильное очищающее масло 150мл</a
+          >
+        </div>
+        <div class="bread__crumbs-mobile">
+          <img
+            class="bread__crumbs-home-icon"
+            src="./images/icons/home.svg"
+            alt="home-icon"
+          />
+          <img
+            class="bread__crumbs-divider-icon"
+            src="./images/icons/divider.svg"
+            alt="divider-icon"
+          />
+          <a class="bread__crumbs-link" href="#">Категория</a>
+          <img
+            class="bread__crumbs-divider-icon"
+            src="./images/icons/divider.svg"
+            alt="divider-icon"
+          />
+          <a class="bread__crumbs-link" href="#">Здоровье</a>
+        </div>
+
+        <section class="product">
+          <div class="product__title">
+            <a class="product__title-link" href="#">
+              <img
+                class="product__title-arrow-icon"
+                src="./images/icons/thin.svg"
+                alt="arrow-icon"
+              />
+              Назад
+            </a>
+            <h2 class="product__title-text">
+              Dermаlogiсa PreCleanse - гидрофильное очищающее масло 150мл
+            </h2>
+          </div>
+          <hr class="product__line" />
+
+          <div class="product__content">
+            <div class="product-photos">
+              <div class="swiper thumbs__swiper">
+                <div class="swiper-wrapper thumbs__swiper-wrapper">
+                  <div class="swiper-slide thumbs__swiper-slide">
+                    <img src="./images/pic.png" alt="" />
+                  </div>
+                  <div class="swiper-slide thumbs__swiper-slide">
+                    <img src="./images/pic.png" alt="" />
+                  </div>
+                  <div class="swiper-slide thumbs__swiper-slide">
+                    <img src="./images/pic.png" alt="" />
+                  </div>
+                  <div class="swiper-slide thumbs__swiper-slide">
+                    <img src="./images/pic.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper main__image-swiper">
+                <div class="swiper-wrapper main__image-swiper-wrapper">
+                  <div class="swiper-slide main__image-swiper-slide">
+                    <img src="./images/main-product-img.png" alt="" />
+                  </div>
+                  <div class="swiper-slide main__image-swiper-slide">
+                    <img src="./images/main-product-img.png" alt="" />
+                  </div>
+                  <div class="swiper-slide main__image-swiper-slide">
+                    <img src="./images/main-product-img.png" alt="" />
+                  </div>
+                  <div class="swiper-slide main__image-swiper-slide">
+                    <img src="./images/main-product-img.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content-wrapper">
+              <div class="product-info">
+                <div class="product-details">
+                  <p class="product-action">2 <span>&plus;</span> 1</p>
+                  <p class="product-week">Товар недели</p>
+                  <div class="product-rating">
+                    <img
+                      class="product-rating__star"
+                      src="./images/icons/yellow-star.svg"
+                      alt="rating-star"
+                    />
+                    <img
+                      class="product-rating__star"
+                      src="./images/icons/yellow-star.svg"
+                      alt="rating-star"
+                    />
+                    <img
+                      class="product-rating__star"
+                      src="./images/icons/yellow-star.svg"
+                      alt="rating-star"
+                    />
+                    <img
+                      class="product-rating__star"
+                      src="./images/icons/yellow-star.svg"
+                      alt="rating-star"
+                    />
+                    <img
+                      class="product-rating__star"
+                      src="./images/icons/green-star.svg"
+                      alt="rating-star"
+                    />
+                  </div>
+                  <p class="product-testimonials__count">345 отзывов</p>
+                  <img
+                    class="product-share__icon"
+                    src="./images/icons/share.svg"
+                    alt="share-icon"
+                  />
+                </div>
+                <p class="product-sku">Код товара: 12332211231ААВ</p>
+              </div>
+              <div class="product-summary">
+                <h3 class="product-summary__title">Описание</h3>
+                <p class="product-summary__text">
+                  Мощный коктейль из 12 аминокислот (лейцин, аргинин,
+                  аспарагиновая кислота, глицин, аланин, серин, валин, пролин,
+                  треонин, изолейцин, гистидин, фенилаланин) повышает
+                  эластичность, обеспечивает увлажняющий эффект, наполняет
+                  клетки кожи энергией.
+                </p>
+                <a class="product-summary__link" href="#">К описанию</a>
+                <div class="product-summary__price">
+                  <p class="product-summary__price-new">12 600 ₽</p>
+                  <p class="product-summary__price-old">14 000 ₽</p>
+                </div>
+                <p class="product-summary__warning">
+                  Предварительная цена доступна после авторизации
+                </p>
+                <hr class="product-summary__line" />
+                <div class="product-summary__actions">
+                  <button class="product-summary__favorite-button">
+                    Добавить в избранное
+                    <img
+                      class="product-summary__favorite-icon"
+                      src="./images/icons/favorite.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="product-summary__cart-button">
+                    Добавить в корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product__tabs">
+            <ul class="product__tabs-list">
+              <li
+                class="product__tabs-btn tabs__btn--active"
+                data-tabs-path="description"
+              >
+                Описание
+              </li>
+              <li class="product__tabs-btn" data-tabs-path="compound">
+                Состав
+              </li>
+              <li class="product__tabs-btn" data-tabs-path="directions-for-use">
+                Способ применения
+              </li>
+              <li
+                class="product__tabs-btn"
+                data-tabs-path="questions-and-answers"
+              >
+                Вопросы и ответы
+              </li>
+            </ul>
+            <div
+              class="product__tabs-content tabs__content--active"
+              data-tabs-target="description"
+            >
+              <h4 class="product__tabs-content__title">Описание</h4>
+              <p class="product__tabs-content__text">
+                Лёгкое масло из комбинации масел Оливы, орехов Кукуйи и Абрикоса
+                удаляет с поверхности кожи жирорастворимые загрязнения и
+                средства макияжа. Это первый этап Двойного очищения Dermalogica.
+                Precleanse полностью растворяет себум, солнцезащитные фильтры,
+                водостойкую косметику, загрязнения из окружающей среды, которые
+                скапливаются на поверхности кожи, и позволяет назначенному Вам
+                очистителю для второго этапа очищения более тщательно
+                воздействовать на кожу и получить результаты профессионального
+                очищения. Профессиональный и розничный продукт.
+              </p>
+              <p class="product__tabs-content__text">
+                Производитель соблюдает нормы и стандарты законодательства стран
+                ЕС по защите окружающей среды, поэтому ламинат производится
+                исключительно из натуральной древесины, которая поставляется из
+                специально отведенных к вырубке участков. Таким образом,
+                экоприверженность и соответствие европейским требованиям
+                безопасности в эксплуатации подтверждены определенными
+                сертификатами.
+              </p>
+            </div>
+            <div class="product__tabs-content" data-tabs-target="compound">
+              <h4 class="product__tabs-content__title">Описание</h4>
+              <p class="product__tabs-content__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae explicabo velit totam tempora fuga aliquam hic!
+                Ducimus perspiciatis ipsam odit nam alias sint explicabo
+                repellat. Excepturi explicabo fugiat itaque temporibus!
+              </p>
+              <p class="product__tabs-content__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas sint culpa illum deserunt, qui molestiae.
+              </p>
+            </div>
+            <div
+              class="product__tabs-content"
+              data-tabs-target="directions-for-use"
+            >
+              <h4 class="product__tabs-content__title">Описание</h4>
+              <p class="product__tabs-content__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae explicabo velit totam tempora fuga aliquam hic!
+                Ducimus perspiciatis ipsam odit nam alias sint explicabo
+                repellat. Excepturi explicabo fugiat itaque temporibus!
+              </p>
+              <p class="product__tabs-content__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptas perspiciatis, similique nam tempora non cumque vitae
+                velit, odit explicabo saepe excepturi ipsa sequi illo alias
+                magni, soluta consectetur aut perferendis?
+              </p>
+            </div>
+            <div
+              class="product__tabs-content"
+              data-tabs-target="questions-and-answers"
+            >
+              <h4 class="product__tabs-content__title">Описание</h4>
+              <p class="product__tabs-content__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae explicabo velit totam tempora fuga aliquam hic!
+                Ducimus perspiciatis ipsam odit nam alias sint explicabo
+                repellat. Excepturi explicabo fugiat itaque temporibus!
+              </p>
+              <p class="product__tabs-content__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quibusdam aperiam facilis iure fugit. Libero rem unde nulla
+                earum? Necessitatibus laudantium eveniet fuga, libero atque
+                distinctio beatae dicta esse numquam aliquid ex obcaecati nisi
+                accusantium voluptatum quod reiciendis alias amet aliquam ipsa
+                magni, sequi tempora! Possimus repudiandae maxime eveniet
+                accusantium deleniti.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="recommended">
+          <div class="recommended__header">
+            <h3 class="recommended__header-title">Рекомендуем</h3>
+            <a class="recommended__header-btn" href="#">Все товары</a>
+          </div>
+          <div class="recommended__products">
+            <div class="recommended__products-card">
+              <img
+                class="recommended__products-card__img"
+                src="./images/recommended-pic.png"
+                alt="recommended-pic"
+              />
+              <img
+                class="recommended__products-card__favorite-icon"
+                src="./images/icons/recomended-favorite.svg"
+                alt="favorite-icon"
+              />
+              <p class="recommended__products-card__text">
+                Витамин Д Д3 D D3 капсулы 2000 МЕ 90 шт, БАД для иммунитета,
+                витаминный комплекс для здоровья костей и зубов для женщин,
+                мужчин Una Tuna (Уна Туна)
+              </p>
+              <div class="recommended__products-card__price-basket">
+                <div class="recommended__products-card__price">
+                  <p class="recommended__products-card__price-new actions">
+                    869 ₽
+                  </p>
+                  <p class="recommended__products-card__price-old">1269 ₽</p>
+                  <p class="recommended__products-card__price-procent actions">
+                    -30%
+                  </p>
+                </div>
+                <img
+                  class="recommended__products-card__basket"
+                  src="./images/icons/Shopping cart.svg"
+                  alt="cart-icon"
+                />
+              </div>
+            </div>
+            <div class="recommended__products-card">
+              <img
+                class="recommended__products-card__img"
+                src="./images/recommended-pic2.png"
+                alt="recommended-pic"
+              />
+              <img
+                class="recommended__products-card__favorite-icon"
+                src="./images/icons/recomended-favorite.svg"
+                alt="favorite-icon"
+              />
+              <p class="recommended__products-card__text">
+                Витамин Д Д3 D D3 капсулы 2000 МЕ 90 шт, БАД для иммунитета,
+                витаминный комплекс для здоровья костей и зубов для женщин,
+                мужчин Una Tuna (Уна Туна)
+              </p>
+              <div class="recommended__products-card__price-basket">
+                <div class="recommended__products-card__price">
+                  <p class="recommended__products-card__price-new">869 ₽</p>
+                </div>
+                <img
+                  class="recommended__products-card__basket"
+                  src="./images/icons/Shopping cart.svg"
+                  alt="cart-icon"
+                />
+              </div>
+            </div>
+            <div class="recommended__products-card">
+              <img
+                class="recommended__products-card__img"
+                src="./images/recommended-pic3.png"
+                alt="recommended-pic"
+              />
+              <div class="promotional__item">
+                <p class="promotional__item-text">NEW</p>
+                <p class="promotional__item-text">2 <span>&plus;</span> 1</p>
+                <p class="promotional__item-text">Товар недели</p>
+              </div>
+              <img
+                class="recommended__products-card__favorite-icon"
+                src="./images/icons/recomended-favorite.svg"
+                alt="favorite-icon"
+              />
+              <p class="recommended__products-card__text">
+                Витамин Д Д3 D D3 капсулы 2000 МЕ 90 шт, БАД для иммунитета,
+                витаминный комплекс для здоровья костей и зубов для женщин,
+                мужчин Una Tuna (Уна Туна)
+              </p>
+              <div class="recommended__products-card__price-basket">
+                <div class="recommended__products-card__price">
+                  <p class="recommended__products-card__price-new actions">
+                    869 ₽
+                  </p>
+                  <p class="recommended__products-card__price-old">1269 ₽</p>
+                  <p class="recommended__products-card__price-procent actions">
+                    -30%
+                  </p>
+                </div>
+                <img
+                  class="recommended__products-card__basket"
+                  src="./images/icons/Shopping cart.svg"
+                  alt="cart-icon"
+                />
+              </div>
+            </div>
+            <div class="recommended__products-card">
+              <img
+                class="recommended__products-card__img"
+                src="./images/recommended-pic2.png"
+                alt="recommended-pic"
+              />
+              <img
+                class="recommended__products-card__favorite-icon"
+                src="./images/icons/recomended-favorite.svg"
+                alt="favorite-icon"
+              />
+              <p class="recommended__products-card__text">
+                Витамин Д Д3 D D3 капсулы 2000 МЕ 90 шт, БАД для иммунитета,
+                витаминный комплекс для здоровья костей и зубов для женщин,
+                мужчин Una Tuna (Уна Туна)
+              </p>
+              <div class="recommended__products-card__price-basket">
+                <div class="recommended__products-card__price">
+                  <p class="recommended__products-card__price-new">869 ₽</p>
+                </div>
+                <img
+                  class="recommended__products-card__basket"
+                  src="./images/icons/Shopping cart.svg"
+                  alt="cart-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter__inner">
+            <div class="newsletter__description">
+              <h3 class="newsletter__description-title">
+                Рассылка о здоровье и красоте
+              </h3>
+              <p class="newsletter__description-text">
+                Подпишись и узнавай о здоровом питании, пользе витаминов и
+                экологии
+              </p>
+            </div>
+            <form class="newsletter__form">
+              <div class="newsletter__form-wrapper">
+                <input
+                  class="newsletter__form-field"
+                  type="email"
+                  placeholder="Введите адрес эл. почты"
+                />
+                <button class="newsletter__form-btn">Подписаться</button>
+              </div>
+              <div class="newsletter__form-accept__wrapper">
+                <input
+                  class="newsletter__form-checkbox"
+                  type="checkbox"
+                  id="checkbox"
+                />
+                <label class="newsletter__form-text" for="checkbox">
+                  Принимаю условия
+                  <a href="#">политикой конфиденциальности</a> и даю разрешение
+                  на обработку персональных данных в соответствии с
+                  <a href="#">согласием на обработку персональных данных</a>.
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <ul class="footer__categories-list">
+          <li class="footer__categories-item">
+            <dl>
+              <dt>Здоровье</dt>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+            </dl>
+          </li>
+          <li class="footer__categories-item">
+            <dl>
+              <dt>Здоровье</dt>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+            </dl>
+          </li>
+          <li class="footer__categories-item">
+            <dl>
+              <dt>Здоровье</dt>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+            </dl>
+          </li>
+          <li class="footer__categories-item">
+            <dl>
+              <dt>Здоровье</dt>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+            </dl>
+          </li>
+          <li class="footer__categories-item">
+            <dl>
+              <dt>Здоровье</dt>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+              <dd>Пункт меню</dd>
+            </dl>
+          </li>
+        </ul>
+        <hr class="footer__line" />
+        <div class="footer__contacts">
+          <div class="footer__contacts-social">
+            <img
+              class="footer__contacts-social__icon"
+              src="./images/icons/youtube.svg"
+              alt="youtube-icon"
+            />
+            <img
+              class="footer__contacts-social__icon"
+              src="./images/icons/vk.svg"
+              alt="vk-icon"
+            />
+            <img
+              class="footer__contacts-social__icon"
+              src="./images/icons/dzen.svg"
+              alt="dzen-icon"
+            />
+            <img
+              class="footer__contacts-social__icon"
+              src="./images/icons/tg.svg"
+              alt="telegram-icon"
+            />
+            <img
+              class="footer__contacts-social__icon"
+              src="./images/icons/skyp.svg"
+              alt="skype-icon"
+            />
+            <img
+              class="footer__contacts-social__icon"
+              src="./images/icons/whatsapp (1).svg"
+              alt="whatsapp-icon"
+            />
+            <img
+              class="footer__contacts-social__icon"
+              src="./images/icons/ok.svg"
+              alt="ok-icon"
+            />
+          </div>
+          <a class="footer__contacts-email" href="mailto:example@mail.com"
+            >example@mail.com</a
+          >
+          <a class="footer__contacts-phone" href="tel:+88005555522"
+            >8 800 555 55 22</a
+          >
+          <a class="footer__contacts-write" href="#">Написать нам</a>
+        </div>
+        <hr class="footer__line" />
+        <div class="footer__credits">
+          <div class="footer__credits-payment__icons">
+            <img
+              class="payment-icon"
+              src="./images/icons/MNP.svg"
+              alt="MNP-icon"
+            />
+            <img
+              class="payment-icon"
+              src="./images/icons/Maestro.svg"
+              alt="Maestro-icon"
+            />
+            <img
+              class="payment-icon"
+              src="./images/icons/Mastercard.svg"
+              alt="Mastercard-icon"
+            />
+            <img
+              class="payment-icon"
+              src="./images/icons/Visa Classic.svg"
+              alt="visa-icon"
+            />
+          </div>
+          <div class="footer__privacy-policy">
+            <a class="privacy-policy" href="#">Политика конфиденицальности</a>
+            <a class="company-info" href="#">Сделано в CoffeeStudio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
